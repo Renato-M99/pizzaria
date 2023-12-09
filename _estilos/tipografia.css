@@ -1,5 +1,43 @@
 /* Resets Gerais */
-*{
-    padding: 0;
-    margin: 0;
+* {
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+}
+
+h4, h5, h6 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #f2b705;
+}
+
+h1{
+    font-size: 600%;
+    font-weight: 200;
+}
+h2{
+    font-size: 400%;
+    font-weight: 200;
+}
+
+h2::after{
+    display: block;
+    background-color: green;
+    height: 5px;
+    width: 100px;
+    /* sempre quando for uma caixa, usar o margin para alinha*/
+
+    margin: 40px auto 30px;
+    content: "";
+}
+
+h4{
+    font-size: 150%;
+    font-weight: 150;
+    padding: 20px 0;
 }

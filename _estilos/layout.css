@@ -1,0 +1,121 @@
+/* resets gerais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    background-image: url(../_imagens/secao08-background-capa.jpg);
+    /* Faz com que a imagem preencha toda a área onde ela foi inserida, fazendo com que a mesma aumente seu tamanho ao máximo que conseguir sem dar zoom*/
+    background-size: cover;
+
+    /* background-position - alinha a imagem tanto no eixo X e eixo Y */
+    /* se colocado em um valor ---> background-position: center;  <--- alinha nos dois eixos */
+    /* ou se colocado com dois valores:  background-position: eixo x eixo y; */
+    /* propiedades: top center bottom right left */
+    background-position: center center;
+
+    width: 100%;
+
+    /* viewport - é o tanto que aparece na tela, área útil */
+    /* vh - frações da tela. Se a tela, por exemplo, tiver height (altura) de 900px e o for atribuído 10vh ele irá atribuir 10% do valor, ou seja, 90px. */
+    height: 100vh;
+
+    /* border-top serve para colocar uma borda na parte superior da região */
+    border-top: 5px solid green;
+    /* prof explicará essa propriedade na próxima aula */
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+}
+
+nav {
+    width: 95%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 2.5%;
+    /* z-index serve para definir a profundidade "eixo z" do elemento, se colocado 9999 ficará em cima de todos os outros elementos da tela */
+    z-index: 9999;
+}
+
+nav ul {
+    display: flex;
+
+    /* forma curta de colocar o flex-direction (primeiro valor) e, também, o flex-wrap (segundo valor) */
+    /* flex-direction: (row/column) (wrap/nowrap) */
+    flex-flow: row wrap;
+    justify-content: left;
+    list-style: none;
+    margin-top: 70px;
+
+}
+
+nav ul#left {
+    position: fixed;
+    left: 30px;
+    top: 0;
+}
+
+nav ul#right {
+    position: fixed;
+    right: 30px;
+    top: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 80%;
+}
+
+nav ul li a#criar-conta {
+    border: 1px solid #fff;
+    padding: 9px 29px;
+}
+
+nav ul li a:hover {
+    background-color: #F2B705;
+    transition: 0.8s;
+}
+
+nav ion-icon {
+    width: 45px;
+    height: 45px;
+    color: white;
+    margin-top: -14px;
+    margin-left: 20px;
+}
+
+nav ion-icon:hover {
+    color: #F2B705;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+header div#chamada {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+
+    top: 50%;
+    left: auto;
+    text-align: center;
+    /*    transform: translate(-50%, -50%); */
+    /* depois arrumar */
+}
+
+p, li, a{
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+}
+
+p.destaque{
+    font-size: 130%;
+    line-height: 1.8;
+    font-weight: 300;
+    text-align: center;
+    width: 60%;
+}
