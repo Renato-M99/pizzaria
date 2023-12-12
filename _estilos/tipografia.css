@@ -41,3 +41,54 @@ h4{
     font-weight: 150;
     padding: 20px 0;
 }
+p, li, a{
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+}
+
+p.destaque{
+    font-size: 130%;
+    line-height: 1.8;
+    font-weight: 300;
+    text-align: center;
+    width: 60%;
+}
+
+/* elementos do HEADER */
+
+header div#chamada h1{
+    color: #fff;
+    /* text-shadow: serve para dar sombreamento para o elemento */
+    /* ORDEM DOS VALORES */
+    /* text-shadow: 4px (eixo-X(horizontal)) 6px( eixo-Y(vertical)) 10px (espalhamento da sombra (quanto maior mais difusa)) #000 - cor da sombra*/
+    text-shadow: 4px 6px 10px #000;
+}
+
+header div#chamada h4{
+    font-size: 250%;
+    text-shadow: 4px 6px 10px #000;
+    margin-bottom: 55px;
+}
+
+header div#chamada a{
+    font-size: 110%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px 80px;
+    border-radius: 50px;
+    display: inline-block;
+    /* Transição suave de uma cor para outra, para utilizá-lo deverá ser informado a cor desejada em seguida porcentagem dessa cor que se deseja colocar */
+    background: linear-gradient(rgba(7, 140, 49, 55) 0%, rgba(6, 89, 2, 35) 50%, rgba(6, 89, 2, 35) 100%);
+    
+}
+
+div.pontos-chaves h4:after{
+    display: block;
+    background-color: #078C31;
+    height: 5px;
+    width: 30%;
+    margin: 20px auto 10px;
+    content: " ";
+}
+
